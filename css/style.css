@@ -1,0 +1,713 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Mono:wght@700&display=swap');
+
+font-family: 'Antonio', sans-serif;
+font-family: 'Cabin', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Ubuntu Mono', monospace;
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6, p, ul, ol, li{
+    margin: 0;
+    padding: 0;
+}
+/*==================================================*/
+#nav_bar{
+    padding: 10PX 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+.logo img{
+    width: 40px;
+    height: 40px;
+}
+.main_menu{
+    float: right;
+    margin-top: 5px;
+}
+.main_menu ul{
+    display: flex;
+    text-align: center;
+}
+.main_menu ul li{
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.main_menu ul li a{
+    color: rgb(247, 245, 245);
+    font-size: 15px;
+    font-family: 'Antonio', sans-serif;
+    font-weight: 300;
+}
+.main_menu ul li a:hover{
+    color: brown;
+}
+.button{
+    float: right;
+    margin-top: 3px;
+}
+.button a{
+    color: #fff;
+    background: red;
+    font-size: 15px;
+    font-family: 'Antonio', sans-serif;
+    font-weight: 300;
+    padding: 3px 10px;
+}
+/*=================================================================*/
+/*=================================================================*/
+#banner_section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: url(../images/banner_02.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+#banner_section::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: -1;
+}
+.banner_main{
+    z-index: 1;
+    margin: 120px 0;
+    position: relative;
+}
+.banner_main::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 10px;
+    background: #720707;
+}
+.banner_main::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 210px;
+    background: #720707;
+}
+.banner_main h2{
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Antonio', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 30px;
+    margin-left: 30px;
+}
+.banner_main h2::before{
+    position: absolute;
+    content: '';
+    top: 200px;
+    left: 10px;
+    width: 140px;
+    height: 10px;
+    background: #720707;
+}
+.banner_main h2::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 140px;
+    width: 10px;
+    height: 20px;
+    background: #720707;
+}
+.banner_main p{
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Antonio', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.banner_main a{
+    color: #be1b1b;
+    font-size: 14px;
+    font-family: 'Antonio', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+/*=================================================================*/
+#service_section{
+    padding: 50px 0;
+}
+.serv_content{
+    width: 200px;
+    height: 100px;
+    background: black;
+}
+.serv_content h6{
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Antonio', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 50px;
+    margin-left: 20px;
+}
+.serv_overly img{
+    width: 50px;
+    height: 50px;
+    background: #e23e38;
+    padding: 10px;
+    margin-top: -160px;
+    margin-left: 20px;
+}
+/*=================================================================*/
+#about_part{
+    padding: 50px 0;
+    margin-bottom: 40px
+}
+.about_photo{;
+}
+.about_photo img{
+    width: 350px;
+    height: 350px;
+    
+}
+.about_overly{
+    margin-top: -260px;
+    margin-left: 200px;
+    position: absolute;
+    z-index: 1;
+}
+.about_overly img{
+    border: 10px solid #fff;
+    width: 350px;
+    height: 350px;
+}
+.about_content{}
+.about_content h1{
+    color: black;
+    font-size: 45px;
+    font-family: 'Antonio', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.about_content h1:hover{
+    color: #720707;
+}
+.about_content p{
+    color: #2e2d2d;
+    font-size: 14px;
+    font-family: 'Antonio', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.about_menu{
+    margin-top: 40px;
+}
+.about_logo img{
+    width: 100%;
+}
+.abt_text h6{
+    color: black;
+    font-size: 20px;
+    font-family: 'Antonio', sans-serif;
+    font-weight: 700;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+.abt_text p{
+    color: #3f3e3e;
+    font-size: 14px;
+    font-family: 'Antonio', sans-serif;
+    font-weight: 400;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+.about_btn{
+    margin-top: 40px;
+}
+.about_btn a{
+    padding: 15px 25px;
+    background: #e23e38;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Antonio', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.about_btn a:hover{
+    background: #35566e;
+    transition: all linear 1s;
+}
+/*=================================================================*/
+#gallery_sect{
+    padding: 50px 0;
+}
+.workout_sect{
+    margin-top: 30px;
+}
+.workout_sect img{
+    width: 350px;
+    height: 350px;
+    transition: width 1s, height 1s;
+}
+.workout_sect img:hover{
+    width: 400px;
+    height: 400px;
+}
+.overly_work{
+    padding: 15px 30px;
+    background: #e23e38;
+    width: 210px;
+    margin-top: -80px;
+    margin-left: 20px;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+}
+.overly_work h4{
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Antonio', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+/*=================================================================*/
+#trainne_section{
+    padding: 50px 0;
+}
+.trainne_part{
+    margin-top: 40px;
+    width: 100%;
+    height: 100px;
+    background: black;
+}
+.trainne_part h4{
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Antonio', sans-serif;
+    font-weight: 700;
+    padding-top: 30px;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+.trainne_part p{
+    color: #720707;
+    font-size: 16px;
+    font-family: 'Antonio', sans-serif;
+    font-weight: 400;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+.overly_trai{
+    visibility: hidden;
+}
+.trainne_part:hover{
+    width: 100%;
+    height: 110px;
+    transition: all linear 1s;
+}
+.trainne_part:hover .overly_trai{
+    visibility: visible;
+}
+.overly_trai ul{
+    display: flex;
+    margin-top: -90px;
+    margin-left: 30px;
+}
+.overly_trai ul li{
+    margin-right: 10px;
+    padding: 3px 8px;
+    background: #e23e38;
+}
+.overly_trai ul li a{
+    color: #fff;
+    font-size: 16px;
+}
+/*=================================================================*/
+#member_part{
+    padding: 50px 0;
+}
+.member_content{
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.9);
+}
+.member_content h3{
+    color: black;
+    font-size: 20px;
+    font-family: 'Antonio', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #7A7A7A;
+    padding: 20px 0;
+}
+.member_content h3:hover{
+    background: #e23e38;
+}
+.member_content h2{
+    font-size: 50px;
+    font-family: 'Antonio', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    background: url(../images/pricing1.jpg);
+    padding: 20px 0;
+}
+.member_content  ul{
+    color: black;
+    font-size: 18px;
+    font-family: 'Antonio', sans-serif;
+    font-weight: 300;
+    padding: 20px 0;
+    line-height: 40px;
+    background: #d8d6d6;
+}
+.member_content a{
+    padding: 10px 0;
+    background: #ddd;
+    font-size: 14px;
+    font-family: 'Antonio', sans-serif;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: -20px;
+}
+.member_content a:hover{
+    background: #e23e38;
+}
+/*........................*/
+.member_content2{
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.9);
+}
+.member_content2 h3{
+    color: black;
+    font-size: 20px;
+    font-family: 'Antonio', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #7A7A7A;
+    padding: 20px 0;
+}
+.member_content2 h3:hover{
+    background: #e23e38;
+}
+.member_content2 h2{
+    font-size: 50px;
+    font-family: 'Antonio', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    background: url(../images/pricing2.jpg);
+    padding: 20px 0;
+    position: relative;
+    z-index: 1;
+}
+.member_content2 h2::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+}
+.member_content2  ul{
+    color: black;
+    font-size: 18px;
+    font-family: 'Antonio', sans-serif;
+    font-weight: 300;
+    padding: 20px 0;
+    line-height: 40px;
+    background: #d8d6d6;
+}
+.member_content2 a{
+    padding: 10px 0;
+    background: #ddd;
+    font-size: 14px;
+    font-family: 'Antonio', sans-serif;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: -20px;
+}
+.member_content2 a:hover{
+    background: #e23e38;
+}
+/*.......................*/
+.member_content3{
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.9);
+}
+.member_content3 h3{
+    color: black;
+    font-size: 20px;
+    font-family: 'Antonio', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #7A7A7A;
+    padding: 20px 0;
+}
+.member_content3 h3:hover{
+    background: #e23e38;
+}
+.member_content3 h2{
+    font-size: 50px;
+    font-family: 'Antonio', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    background: url(../images/pricing3.jpg);
+    padding: 20px 0;
+    position: relative;
+    z-index: 1;
+}
+.member_content3 h2::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+}
+.member_content3  ul{
+    color: black;
+    font-size: 18px;
+    font-family: 'Antonio', sans-serif;
+    font-weight: 300;
+    padding: 20px 0;
+    line-height: 40px;
+    background: #d8d6d6;
+}
+.member_content3 a{
+    padding: 10px 0;
+    background: #ddd;
+    font-size: 14px;
+    font-family: 'Antonio', sans-serif;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: -20px;
+}
+.member_content3 a:hover{
+    background: #e23e38;
+}
+/*=================================================================*/
+#counter{
+    padding: 20px 0;
+    position: relative;
+    z-index: 1;
+}
+#counter::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+}
+
+#counter {
+    display: grid;
+    place-items: center;
+    background: #fafafa;
+}
+
+.counter_text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.count_num h1{
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Antonio', sans-serif;
+    font-weight: 600;
+}
+.count_num h3{
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Antonio', sans-serif;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.count_num {
+    width: 200px;
+    height: 150px;
+    padding: 50px 0;
+    margin-left: 30px;
+    text-align: center;
+    border-radius: 5px;
+    background: #19f;
+    color: #fff;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.9);
+}
+.count_num:first-child{
+    margin-left: -40px;
+}
+.count_num:last-child{
+    margin-right: -40px;
+}
+/*=================================================================*/
+#class_esction{
+    padding: 50px 0;
+}
+.class_menu{
+    background: #f1f1f1;
+    line-height: 50px;
+    margin-top: 30px;
+}
+.class_menu li button{
+    text-align: center;
+    width: 100%;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+.class_menu li{
+    width: 16.66%;
+   
+}
+.class_menu .nav-link.active,
+.class_menu .show>.nav-link {
+    color: #fff;
+    background-color: #e23e38;
+    width: 100%;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+.class_inner ul li{
+    width: 19.63%;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    background: #f1f1f1;
+    padding: 50px 0;
+    text-align: center;
+}
+.class_inner ul li:hover{
+    background: #e23e38;
+    color: #fff;
+}
+
+.class_inner ul li:nth-child(5),
+.class_inner ul li:last-child{
+    margin-right: 0;
+}
+/*=================================================================*/
+#blog_section{
+    padding: 50px 0;
+}
+
+.text_up{
+    text-align: center;
+}
+.text_up h2{
+    color: black;
+    font-family: 'Antonio', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-shadow: 3px 5px 2px #7A7A7A;
+}
+.blog_sec{
+    margin-top: 50px;
+    display: flex;
+}
+.blog_content{
+    margin-right: 10px;
+}
+.blog_content img{
+    width: 250px;
+    height: 300px;
+}
+.blog_content .overly h4{
+    color: black;
+    font-size: 18px;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 700;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.blog_content .overly a{
+    color: rgb(133, 17, 17);
+    font-size: 15px;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.blog_content .overly a i{
+    font-size: 13px;
+}
+/*=============================================*/
+#footer_section{
+    padding: 50px 0;
+    background: url(../images/background.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+#footer_section::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+}
+
+.footer_img{
+    text-align: center;
+    z-index: 1;
+}
+.footer_img img{
+    width: 60px;
+    height: 60px;
+}
+.footer_content{
+   margin-top: 30px;
+}
+.cont_part1 a{
+    padding: 10px 15px;
+    background: rgb(133, 17, 17);
+    color: #fff;
+    font-size: 16px;
+}
+.cont_part2 h6{
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Antonio', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
